@@ -2,17 +2,11 @@
 layout: default
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<div class="home">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+    <p class="autobio">
+        I am a M.S. student in Mechanical Engineering at Stanford University. I obtained my B.S. in Electrical Engineering and Computer Science 
+    at the University of California, Berkeley.
+    </p>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
 </div>
