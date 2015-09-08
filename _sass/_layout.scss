@@ -1,0 +1,256 @@
+/*
+ * Site
+ */
+body {
+  background: url("../images/fabric_of_squares_gray/fabric_of_squares_gray.png");
+  background-repeat: repeat;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/**
+ * Site header
+ */
+.site-header {
+  background: rgba(0,0,0,0.85);
+  z-index: 10;
+}
+
+.site-header .wrapper {
+  margin: 0px auto;
+  padding: 0px 1.25em;
+}
+
+.site-title {
+  position: relative;
+  float: left;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  margin-bottom: 0;
+  color: white;
+}
+
+/* Overwriting navbar-default colors */
+.navbar {
+  background-color: transparent;
+  border-color: transparent;
+  margin-bottom: 0;
+}
+
+/* Styling navbar list */
+.navbar-collapse {
+  position: relative;
+  float: right;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.navbar-opt {
+  font-size: 135%;
+}
+
+.navbar-default .navbar-nav>li>a {
+  padding-left: $spacing_unit/3;
+  padding-right: $spacing_unit/3;
+  color: white;
+}
+
+.navbar-default .navbar-nav>li>a:hover {
+  color: rgba(128,130,133,1);
+}
+
+.navbar-opt:hover {
+  color: rgba(128,130,133,1);
+}
+
+.navbar-header {
+  position: relative;
+  float: left;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active >
+ a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+}
+
+/**
+ * Site footer
+ */
+
+.site-footer {
+    background: url("../images/fabric_of_squares_gray/fabric_of_squares_gray_darker.png");
+    background-repeat: repeat;
+    border-top: 2px solid rgba(100,100,100,1);
+    padding: $spacing-unit 0;
+    font-size: 0.75em;
+}
+
+.footer-heading {
+    font-size: 18px;
+    margin-bottom: $spacing-unit / 2;
+}
+
+.contact-list,
+.social-media-list {
+    list-style: none;
+    margin-left: 0;
+}
+
+.footer-col-wrapper {
+    color: $grey-color;
+    margin-left: -$spacing-unit / 2;
+    @extend %clearfix;
+}
+
+.footer-col {
+    float: left;
+    margin-bottom: $spacing-unit / 2;
+    padding-left: $spacing-unit / 2;
+}
+
+.footer-col-1 {
+    width: -webkit-calc(35% - (#{$spacing-unit} / 2));
+    width:         calc(35% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2 {
+    width: -webkit-calc(25% - (#{$spacing-unit} / 2));
+    width:         calc(25% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-3 {
+    width: -webkit-calc(40% - (#{$spacing-unit} / 2));
+    width:         calc(40% - (#{$spacing-unit} / 2));
+}
+
+@include media-query($on-laptop) {
+    .footer-col-1,
+    .footer-col-2 {
+        width: -webkit-calc(50% - (#{$spacing-unit} / 2));
+        width:         calc(50% - (#{$spacing-unit} / 2));
+    }
+
+    .footer-col-3 {
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+@include media-query($on-palm) {
+    .footer-col {
+        float: none;
+        width: -webkit-calc(100% - (#{$spacing-unit} / 2));
+        width:         calc(100% - (#{$spacing-unit} / 2));
+    }
+}
+
+.footer-col ul {
+    margin: auto;
+}
+
+.glyphicon-envelope {
+    width: 2em;
+    height: 1.5em;
+}
+
+
+/**
+ * Page content
+ */
+.profile-pic {
+    padding-left: 0;
+}
+
+.page-content {
+    padding: $spacing-unit 0;
+}
+
+.page-content .row {
+    padding-bottom: 1.5*$spacing-unit;
+}
+
+.page-heading {
+    font-size: 20px;
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.post-link {
+    display: block;
+    font-size: 24px;
+}
+
+
+
+/**
+ * Posts
+ */
+.page-content p {
+    text-indent: 1.5em;
+}
+
+.post-header {
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+.post-content {
+    margin-bottom: $spacing-unit;
+
+    h2 {
+        font-size: 32px;
+
+        @include media-query($on-laptop) {
+            font-size: 28px;
+        }
+    }
+
+    h3 {
+        font-size: 26px;
+
+        @include media-query($on-laptop) {
+            font-size: 22px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+    }
+}
+
+/**
+ * About
+ */
+.profile-col {
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+}
+
+.profile-cell {
+    margin:auto;
+}

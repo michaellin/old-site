@@ -1,0 +1,29 @@
+<!-- Jekyll code to get active page -->
+{% assign current = page.url | downcase | split: '/' %}
+
+<header class="site-header">
+
+  <div class="container wrapper">
+      <nav class="navbar navbar-default">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="glyphicon glyphicon-list"></span>
+            Menu
+          </button>
+          <h1 class="site-title"> Michael Lin </h1>
+        </div> <!-- navbar-header -->
+
+        <div class="collapse navbar-collapse" id="collapse">
+            <ul class="nav navbar-nav">
+                <li class="{% if page.url == '/' %}active{% endif %}"><a class="navbar-opt" href="{{ "/index.html" | prepend: site.baseurl }}">Home</a></li>
+                <li class="{% if page.url == '/projects.html' %}active{% endif %}"><a class="navbar-opt" href="{{ "/projects.html" | prepend: site.baseurl }}">Projects</a></li>
+                <li class="{% if page.url == '/research.html' %}active{% endif %}"><a class="navbar-opt" href="{{ "/research.html" | prepend: site.baseurl }}">Research</a></li>
+                <li class="{% if page.url == '/blog.html' %}active{% endif %}"><a class="navbar-opt" href="{{ "/blog.html" | prepend: site.baseurl }}">Blog</a></li>
+            </ul>
+        </div> <!-- collapse -->
+      </nav>
+  </div>
+
+</header>
