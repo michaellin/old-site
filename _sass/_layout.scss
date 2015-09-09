@@ -191,13 +191,49 @@ body {
     font-size: 24px;
 }
 
+/**
+ * Projects
+ */
+.team-members {
+    position: relative;
+    float: left;
+    color: $grey-color;
+    font-size: 12px;
+}
 
+.project-info {
+    color: $grey-color;
+    font-size: 12px;
+}
+.project-info:before {
+    content: " | ";
+}
+
+.breadcrumb {
+    margin-left: 0;
+    background-color: transparent;
+}
+
+.breadcrumb>li+li:before {
+    content: ">\00a0";
+}
+
+.project-video {
+    margin-bottom: 1em;
+}
+
+.project-image {
+    height: 315px;
+    width: 560px;
+    margin-bottom: 1em;
+}
 
 /**
  * Posts
  */
 .page-content p {
     text-indent: 1.5em;
+    text-align: justify;
 }
 
 .post-header {
