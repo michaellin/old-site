@@ -8,23 +8,23 @@ layout: default
         <li><a href="{{ "/projects.html" | prepend: site.baseurl }}">Projects</a></li>
         <li class="active">Current</li>
     </ol>
-    <h1 class="page-heading">Mechatronics Design Lab</h1>
-    <h2 class="team-members"> Michael Lin, Emily Chen, Maruchi Kim </h2>
+    <h1 class="page-heading">Bio Instrumentation Lab</h1>
+    <h2 class="team-members"> Michael Lin, Mohyee Ayouty </h2>
     <h2 class="project-info"> UC Berkeley, Spring 2014 </h2>
-    <p> This was a semester long project with the course EE 192 (Mechatronics Design Lab) at UC Berkeley. The project consisted on designing and building an 
-        autonomous racing car that is able to follow a racing track marked with tape. The semester culminated with a national competition at UC Davis (NATCAR),
-        where my team won first place with an average speed of 9.06 feet/s.
+    <p> BioEngineering 101 was a half theory half design course on bio-instrumentation and patient signal gethering. My final project was centered on 
+        designing a pulse oximeter with reduced false positives.
     </p>
-    <p> This is video of the car running: </p>
-    <iframe class="project-video center-block" width="560" height="315" src="https://www.youtube.com/embed/5SQ9C-32nGY" frameborder="0" allowfullscreen></iframe>
+
+    <p> This is video of Mo testing out the device: </p>
+    <iframe class="project-video center-block" width="560" height="315" src="https://youtu.be/Oy4zzRRcv8s" frameborder="0" allowfullscreen></iframe>
 
     <p> Our project made use of a line array camera for detecting the tape on the racing track</p>
-    <img class="project-image center-block" src="{{ "/images/projects/NATCAR/NATCAR1.jpg" | prepend: site.baseurl }}">
+    <img class="project-image center-block" src="{{ "/images/projects/PulseOx/FullSetup.jpg" | prepend: site.baseurl }}">
 
     <p> The motor controller board was custom built which integrates a double H-bridge and boost converters to provide maximum power to the
         motors efficiently.
     </p>
-    <img class="project-image center-block" src="{{ "/images/projects/NATCAR/NATCAR2.jpg" | prepend: site.baseurl }}">
+    <img class="project-image center-block" src="{{ "/images/projects/PulseOx/InstAmplifier.jpg" | prepend: site.baseurl }}">
     <img class="project-image center-block" src="{{ "/images/projects/NATCAR/NATCAR3.jpg" | prepend: site.baseurl }}">
     <p> We used a Freescale FRDM-KL25Z microcontroller (ARM Cortex-M0) to do the sensor data filtering and real time control of the car.</p>
     <img class="project-image center-block" src="{{ "/images/projects/NATCAR/NATCAR4.jpg" | prepend: site.baseurl }}">
