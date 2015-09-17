@@ -11,22 +11,20 @@ layout: default
     <h1 class="page-heading">Bio Instrumentation Lab</h1>
     <h2 class="team-members"> Michael Lin, Mohyee Ayouty </h2>
     <h2 class="project-info"> UC Berkeley, Spring 2014 </h2>
-    <p> BioEngineering 101 was a half theory half design course on bio-instrumentation and patient signal gethering. My final project was centered on 
-        designing a pulse oximeter with reduced false positives.
+    <p> BioEngineering 101 was a course of half theory half design on bio-instrumentation. The course broadly teaches you how to gather electric signals from sensors on the human boady and how to deal with different types of interference or noise from those signals. How to build filtering circuits to boost the signal-to-noise ratio. My final project was centered on designing a monitor system using a pulse oximeter with a respiratory monitor (simple wearable strap on the chest with a built-in strain gauge). The goal was to produce a monitor that would reduce the false positives of patient danger, thus, reducing the stress of hospital staff.
     </p>
 
     <p> This is video of Mo testing out the device: </p>
-    <iframe class="project-video center-block" width="560" height="315" src="https://youtu.be/Oy4zzRRcv8s" frameborder="0" allowfullscreen></iframe>
+    <iframe class="project-video center-block" width="560" height="315" src="https://www.youtube.com/embed/Oy4zzRRcv8s" frameborder="0" allowfullscreen></iframe>
 
-    <p> Our project made use of a line array camera for detecting the tape on the racing track</p>
-    <img class="project-image center-block" src="{{ "/images/projects/PulseOx/FullSetup.jpg" | prepend: site.baseurl }}">
+    <p> We built the pulse oximeter from ground up. We decided to use an IR LED, a red LED and a light sensor to detect the heart rate and blood oxygen level of the patient. Interestingly, the blood has oxigenated and deoxigenated hemoglobin each with a different light wavelength absoption. Oxigenated blood absorbs IR light (~910nm) and Deoxigenated blood absorbs red light (600-750nm). When we shine the red light and the IR light through, say a finger, they get absorbed in different levels. The amount of light that is not absorbed passes through, which is then measured by the light sensor on the other side of the finger. The ratio between the oxigenated and deoxigenated hemoglobin tells us the amount of oxygen in a patient's bloodstream.</p>
+    <img class="project-image center-block" src="{{ "/images/projects/PulseOx/pulse_ox.jpg" | prepend: site.baseurl }}">
 
-    <p> The motor controller board was custom built which integrates a double H-bridge and boost converters to provide maximum power to the
-        motors efficiently.
-    </p>
+    <p> We custom built the amplifier circuit to boost the signal from the light sensor. Instrumentation amplifier was the best option since it gave us great common-mode rejection. The output of the amplifier was fed to a National Instrument Data Acquisition System to get them into our computer program.</p>
     <img class="project-image center-block" src="{{ "/images/projects/PulseOx/InstAmplifier.jpg" | prepend: site.baseurl }}">
-    <img class="project-image center-block" src="{{ "/images/projects/NATCAR/NATCAR3.jpg" | prepend: site.baseurl }}">
-    <p> We used a Freescale FRDM-KL25Z microcontroller (ARM Cortex-M0) to do the sensor data filtering and real time control of the car.</p>
-    <img class="project-image center-block" src="{{ "/images/projects/NATCAR/NATCAR4.jpg" | prepend: site.baseurl }}">
+    <p> Example of the signal from the output of the amplifier. We were thrilled to see the heart pulse signal!
+    <img class="project-image center-block" src="{{ "/images/projects/PulseOx/signal1.jpg" | prepend: site.baseurl }}">
+    <p> An image of the whole setup (sorry for the blurry picture!).</p>
+    <img class="project-image center-block" src="{{ "/images/projects/PulseOx/FullSetup.jpg" | prepend: site.baseurl }}">
 
 </div> <!-- projects -->

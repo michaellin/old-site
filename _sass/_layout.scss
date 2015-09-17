@@ -209,6 +209,16 @@ body {
     content: " | ";
 }
 
+.square.project-cell {
+    width: 320px;
+    height: 320px;
+}
+
+.project-category {
+    color: $grey-color;
+    font-size: 16px;
+}
+
 .breadcrumb {
     margin-left: 0;
     background-color: transparent;
@@ -223,8 +233,8 @@ body {
 }
 
 .project-image {
-    height: 315px;
-    width: 560px;
+    max-width: 560px;
+    max-height: 560px;
     margin-bottom: 1em;
 }
 
