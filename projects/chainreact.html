@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="projects">
+
+    <ol class="breadcrumb">
+        <li><a href="{{ "/projects.html" | prepend: site.baseurl }}">Projects</a></li>
+        <li class="active">Current</li>
+    </ol>
+    <h1 class="page-heading"> Chain Reaction Competition by Hackers@Berkeely at UC Berkeley</h1>
+    <h2 class="team-members"> Michael Lin, Kenneth Lin</h2>
+    <h2 class="project-info"> UC Berkeley, Fall 2012 </h2>
+    <p> The goal of the hackathon was to create a Rube Goldberg machine integrating as many APIs as possible (if you dont know what a RG machine is see <a href="https://www.rubegoldberg.com/about/"> this</a>). 
+    </p>
+    <p>Our Rube Goldberg began by running a python script in my Macbook that would send a serial message to an Arduino. The Arduino would then control the servo to shoot the rubber band gun and trigger the chain of dominoes. The last domino would fall on a mouse hitting a left click. This would trigger a Twilio script in Kenneth's laptop and send a text to a cellphone on the side. The cellhpone would have an Android app open and listening for a call using Google Voicemail. Once it gets it it would play a song through the speakers and post a celebration message on Facebook using Facebook API.
+    </p>
+    <p> This is a video of our demo: </p>
+    <iframe class="project-video center-block" width="560" height="315" src="https://www.youtube.com/embed/rqwGLnixClY" frameborder="0" allowfullscreen></iframe>
+
+</div> <!-- projects -->
