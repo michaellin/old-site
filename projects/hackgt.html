@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="projects">
+
+    <ol class="breadcrumb">
+        <li><a href="{{ "/projects.html" | prepend: site.baseurl }}">Projects</a></li>
+        <li class="active">Current</li>
+    </ol>
+    <h1 class="page-heading">Hackathon at Georgia Tech</h1>
+    <h2 class="team-members"> Michael Lin and Alexa Siu </h2>
+    <h2 class="project-info"> Georgia Tech, Fall 2014 </h2>
+    <p> We were very interested in haptic technology so we decided to build a wearable haptic glove. Our goal was to give haptic feedback through vibrations to the users and all them to feel a virtual world and interact with it.
+    </p>
+    <p> Since we were limited by time and money we got some $10 phones from Walmart and took their vibration motors. </p>
+    <img class="project-image center-block" src="{{ "/images/projects/HackGT/vibromotor.jpg" | prepend: site.baseurl }}">
+
+    <p> We were also fortunate that HackGT staff lent us a SparkIO! I've never used one before but it was really easy and fun to use. SparkIO is basically a microcontroller with a wifi module wrapped with a very well made API that lets you give your projects the IoT spin. (This startup is actually pretty well now <a href="https://store.particle.io/"> link </a>).
+    <img class="project-image center-block" src="{{ "/images/projects/HackGT/sparkio.jpg" | prepend: site.baseurl }}">
+
+    <p> Another cool piece of hardware that we used was a LEAP Motion sensor. These sensor allowed us to track the position of the user's finger tips in real time. This way we could map the virtual world to the 3D space surrounding the users hand and provide feedback to the user based on fingers positions. </p>
+    <img class="project-image center-block" src="{{ "/images/projects/HackGT/leapmotion.jpg" | prepend: site.baseurl }}">
+    
+    <p> So in the time frame of 6-8 hours we got the whole setup ready </p>
+    <img class="project-image center-block" src="{{ "/images/projects/HackGT/wholesetup.jpg" | prepend: site.baseurl }}">
+
+    <p> Since both of us were interested in medical applications, we coded up an Python application that took position input from the user and allowed them to touch a virtual human heart! (i.e. the picture of one). We displayed a simple vibration feedback at the user's finger tip whenever their finger position came in contact the the virtual heart. </p>
+    <img class="project-image center-block" src="{{ "/images/projects/HackGT/application.jpg" | prepend: site.baseurl }}">
+
+    <p> Sadly during demo time we had trouble with the wifi. There were too many people in the room so our SparkIO was often stuck in wifi traffic. This caused a delay between the sensed finger tip position and the feedback given to the user which greatly degrades user experience. (Murphy's law got me again)</p>
+    <img class="project-image center-block" src="{{ "/images/projects/HackGT/demoday.jpg" | prepend: site.baseurl }}">
+
+    <p> However, I still had a great time at the Hackathon. Shout-out to Alexa for pulling her first all-nighter with me and doing such great work! </p>
+    <img class="project-image center-block" src="{{ "/images/projects/HackGT/demoday2.jpg" | prepend: site.baseurl }}">
+    
+
+</div> <!-- projects -->
