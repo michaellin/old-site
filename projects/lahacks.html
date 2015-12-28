@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="projects">
+
+    <ol class="breadcrumb">
+        <li><a href="{{ "/projects.html" | prepend: site.baseurl }}">Projects</a></li>
+        <li class="active">Current</li>
+    </ol>
+    <h1 class="page-heading">Hackathon at UCLA</h1>
+    <h2 class="team-members"> Michael Lin,Alexa Siu, Kenneth Lin, Kevin Chen and Rebecca Chen </h2>
+    <h2 class="project-info"> UCLA, Spring 2015 </h2>
+    <p> Alexa and I wanted to continue developing what we had done at hackGT. Kevin was inspired with the idea of making a glove to feel music and we all liked it. The idea came down to embedding multiple small vibration motors in various locations of a glove and synchronizing them with the music to put an orchestra of vibrations on the user's hands. We called it TouchMusic gloves. Here is a link to <a target="_blank" href="http://devpost.com/software/jammed"> the website </a> we submitted for the competition with more details.
+    </p>
+
+    <p> This is how the battlefield looked like </p>
+    <img class="project-image center-block" src="{{ "/images/projects/LAHacks/battlefield.jpg" | prepend: site.baseurl }}">
+
+    <p> The team settled down </p>
+    <img class="project-image center-block" src="{{ "/images/projects/LAHacks/settleddown.jpg" | prepend: site.baseurl }}">
+    
+    <p> One of the hardests things in our project was to find small vibration motors that would fit comfortable on a glove. We found out that there was a repair store nearby that sold replacement vibration motors for iPhones so we used that. </p>
+    <img class="project-image center-block" src="{{ "/images/projects/LAHacks/wiringvibmotors.jpg" | prepend: site.baseurl }}">
+
+    <p> We soldered a custom motor controller and used an Arduino ATMega to control them </p>
+    <img class="project-image center-block" src="{{ "/images/projects/LAHacks/thehand.jpg" | prepend: site.baseurl }}">
+
+    <p> Kenneth coded up a really sweet script that would take a .wav and do real time Fast-Fourier Transform to get the frequencies of the song and mapped ranges of frequencies to different motors. We put the hardware and software together and they worked very well together. The result was that these gloves felt amazing! We chose some songs with lots of base to demo at the competition and had a great time.
+    </p>
+    <p> In the pictures: Kenneth and I demoing the TouchMusic gloves (Only two team members were allowed at the table) </p>
+    <img class="project-image center-block" src="{{ "/images/projects/LAHacks/demoday.jpg" | prepend: site.baseurl }}">
+    
+
+</div> <!-- projects -->
